@@ -28,7 +28,7 @@ export default function RootLayout({
 			<body
 				className={`${geistSans.variable} ${geistMono.variable} antialiased`}
 			>
-				<WhopApp>{children}</WhopApp>
+				<WhopApp sdkOptions={{ appId: process.env.NEXT_PUBLIC_WHOP_APP_ID || "" }}>{children}</WhopApp>
 			</body>
 		</html>
 	);
