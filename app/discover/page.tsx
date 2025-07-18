@@ -1,10 +1,10 @@
 "use client";
-
+export const dynamic = "force-dynamic";
 import { useState } from "react";
 import { useIframeSdk } from "@whop/react";
 
 export default function DiscoverPage() {
-  const sdk = useIframeSdk();
+	const sdk = useIframeSdk();
   const [email, setEmail] = useState<string | null>(null);
 
   return (
